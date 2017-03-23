@@ -1,0 +1,973 @@
+ds directory : /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_01.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -2.78   76.18    0.00 mm <->   -2.78   76.18   -0.00 mm (orig :  -66.81   48.75 -261.42 mm) diff =    0.000 mm
+       2.78  -76.18    0.00 mm <->    2.78  -76.18   -0.00 mm (orig :   34.22  -65.08 -252.67 mm) diff =    0.000 mm
+     108.56    0.00    0.00 mm <->  108.56    0.00   -0.00 mm (orig :   66.91   61.04 -248.46 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_01.ds/S14-5_Attractor_20161115_01.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_01.ds/S14-5_Attractor_20161115_01.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    857 x 1200 = 1028400 samples from 405 chs
+    1155 samples omitted at the end
+Current compensation grade : 0
+/mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_01.ds 20161115
+get metadata from raw data
+601 events found
+Events id: [226 232]
+6927 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+6927 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+198 events found
+Events id: [226 232]
+2300 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Reading 0 ... 709963  =      0.000 ...   591.636 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 709963  =      0.000 ...   591.636 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 709963  =      0.000 ...   591.636 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+8 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+56 bad epochs dropped
+Dropped 1 epoch
+block 1.0 saved
+getting metadata from raw data form block 1
+199 events found
+Events id: [226 232]
+2300 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Reading 0 ... 725685  =      0.000 ...   604.737 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 725685  =      0.000 ...   604.737 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 725685  =      0.000 ...   604.737 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+17 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+53 bad epochs dropped
+Dropped 3 epochs
+block 2.0 saved
+getting metadata from raw data form block 2
+201 events found
+Events id: [226 232]
+2324 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Reading 0 ... 704523  =      0.000 ...   587.102 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 704523  =      0.000 ...   587.102 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 704523  =      0.000 ...   587.102 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+12 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+36 bad epochs dropped
+Dropped 3 epochs
+block 3.0 saved
+ds directory : /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_02.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -2.52   76.36    0.00 mm <->   -2.52   76.36   -0.00 mm (orig :  -67.85   47.33 -258.28 mm) diff =    0.000 mm
+       2.52  -76.36    0.00 mm <->    2.52  -76.36    0.00 mm (orig :   34.99  -65.54 -252.40 mm) diff =    0.000 mm
+     108.77    0.00    0.00 mm <->  108.77   -0.00   -0.00 mm (orig :   65.97   61.51 -247.99 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_02.ds/S14-5_Attractor_20161115_02.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_02.ds/S14-5_Attractor_20161115_02.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    931 x 1200 = 1117200 samples from 405 chs
+    1152 samples omitted at the end
+Current compensation grade : 0
+Reading 0 ... 2441999  =      0.000 ...  2034.999 secs...
+/mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_02.ds 20161115
+get metadata from raw data
+643 events found
+Events id: [225 226 232]
+7065 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+7065 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+204 events found
+Events id: [226 232]
+2349 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+18 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+69 bad epochs dropped
+Dropped 3 epochs
+block 4.0 saved
+getting metadata from raw data form block 1
+206 events found
+Events id: [226 232]
+2348 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+99 matching events found
+No baseline correction applied
+0 projection items activated
+99 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 99 events and 601 original time points ...
+59 bad epochs dropped
+Loading data for 99 events and 3601 original time points ...
+97 bad epochs dropped
+Dropped 1 epoch
+block 5.0 saved
+drop channel
+getting metadata from raw data form block 2
+209 events found
+Events id: [226 232]
+2365 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+99 matching events found
+No baseline correction applied
+0 projection items activated
+99 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 99 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 99 events and 3601 original time points ...
+5 bad epochs dropped
+Dropped 4 epochs
+block 6.0 saved
+ds directory : /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_03.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -2.74   76.52    0.00 mm <->   -2.74   76.52    0.00 mm (orig :  -70.70   43.53 -255.18 mm) diff =    0.000 mm
+       2.74  -76.52    0.00 mm <->    2.74  -76.52    0.00 mm (orig :   36.09  -66.23 -253.77 mm) diff =    0.000 mm
+     109.20    0.00    0.00 mm <->  109.20   -0.00    0.00 mm (orig :   63.58   61.94 -251.23 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_03.ds/S14-5_Attractor_20161115_03.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_03.ds/S14-5_Attractor_20161115_03.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    274 x 1200 = 328800 samples from 405 chs
+    663 samples omitted at the end
+Current compensation grade : 0
+/mnt/homes/home024/gortega/megdata/S14-5_Attractor_20161115_03.ds 20161115
+get metadata from raw data
+410 events found
+Events id: [226 232]
+4711 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+4711 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+203 events found
+Events id: [226 232]
+2347 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Reading 0 ... 734244  =      0.000 ...   611.870 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 734244  =      0.000 ...   611.870 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 734244  =      0.000 ...   611.870 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+99 matching events found
+No baseline correction applied
+0 projection items activated
+99 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 99 events and 601 original time points ...
+8 bad epochs dropped
+Loading data for 99 events and 3601 original time points ...
+6 bad epochs dropped
+Dropped 5 epochs
+block 7.0 saved
+getting metadata from raw data form block 1
+205 events found
+Events id: [226 232]
+2362 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+Reading 0 ... 688924  =      0.000 ...   574.103 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 688924  =      0.000 ...   574.103 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 688924  =      0.000 ...   574.103 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+8 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+5 bad epochs dropped
+Dropped 4 epochs
+block 8.0 saved
+ds directory : /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_01.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -0.76   78.64    0.00 mm <->   -0.76   78.64    0.00 mm (orig :  -65.43   54.59 -258.19 mm) diff =    0.000 mm
+       0.76  -78.64    0.00 mm <->    0.76  -78.64    0.00 mm (orig :   36.67  -64.75 -249.70 mm) diff =    0.000 mm
+     107.88    0.00    0.00 mm <->  107.88    0.00    0.00 mm (orig :   67.46   64.35 -242.92 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_01.ds/S14-6_Attractor_20161121_01.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_01.ds/S14-6_Attractor_20161121_01.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_01.ds/S14-6_Attractor_20161121_01.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    501 x 1200 = 601200 samples from 405 chs
+    306 samples omitted at the end
+Current compensation grade : 0
+/mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_01.ds 20161121
+get metadata from raw data
+822 events found
+Events id: [226 232]
+9435 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+9435 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+205 events found
+Events id: [226 232]
+2347 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 680947  =      0.000 ...   567.456 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 680947  =      0.000 ...   567.456 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 680947  =      0.000 ...   567.456 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+6 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+8 bad epochs dropped
+Dropped 1 epoch
+block 1.0 saved
+getting metadata from raw data form block 1
+201 events found
+Events id: [226 232]
+2343 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 688881  =      0.000 ...   574.067 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 688881  =      0.000 ...   574.067 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 688881  =      0.000 ...   574.067 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+11 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+18 bad epochs dropped
+Dropped 0 epochs
+block 2.0 saved
+getting metadata from raw data form block 2
+212 events found
+Events id: [226 232]
+2441 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 746382  =      0.000 ...   621.985 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 746382  =      0.000 ...   621.985 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 746382  =      0.000 ...   621.985 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+9 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+8 bad epochs dropped
+Dropped 3 epochs
+block 3.0 saved
+getting metadata from raw data form block 3
+201 events found
+Events id: [226 232]
+2300 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 661405  =      0.000 ...   551.171 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 661405  =      0.000 ...   551.171 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 661405  =      0.000 ...   551.171 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+3 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+3 bad epochs dropped
+Dropped 1 epoch
+block 4.0 saved
+ds directory : /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_02.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -0.63   78.91    0.00 mm <->   -0.63   78.91   -0.00 mm (orig :  -63.29   54.04 -259.16 mm) diff =    0.000 mm
+       0.63  -78.91    0.00 mm <->    0.63  -78.91   -0.00 mm (orig :   37.83  -66.72 -249.20 mm) diff =    0.000 mm
+     107.37    0.00    0.00 mm <->  107.37   -0.00   -0.00 mm (orig :   69.14   62.08 -242.20 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_02.ds/S14-6_Attractor_20161121_02.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_02.ds/S14-6_Attractor_20161121_02.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_02.ds/S14-6_Attractor_20161121_02.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    370 x 1200 = 444000 samples from 405 chs
+    771 samples omitted at the end
+Current compensation grade : 0
+/mnt/homes/home024/gortega/megdata/S14-6_Attractor_20161121_02.ds 20161121
+get metadata from raw data
+819 events found
+Events id: [226 232]
+9393 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+9393 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+201 events found
+Events id: [226 232]
+2310 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 685702  =      0.000 ...   571.418 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 685702  =      0.000 ...   571.418 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 685702  =      0.000 ...   571.418 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+5 bad epochs dropped
+Dropped 3 epochs
+block 5.0 saved
+getting metadata from raw data form block 1
+202 events found
+Events id: [226 232]
+2334 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 706069  =      0.000 ...   588.391 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 706069  =      0.000 ...   588.391 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 706069  =      0.000 ...   588.391 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+7 bad epochs dropped
+Dropped 2 epochs
+block 6.0 saved
+getting metadata from raw data form block 2
+209 events found
+Events id: [226 232]
+2392 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 715771  =      0.000 ...   596.476 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 715771  =      0.000 ...   596.476 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 715771  =      0.000 ...   596.476 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+10 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+10 bad epochs dropped
+Dropped 3 epochs
+block 7.0 saved
+getting metadata from raw data form block 3
+203 events found
+Events id: [226 232]
+2353 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+Reading 0 ... 708364  =      0.000 ...   590.303 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 708364  =      0.000 ...   590.303 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 708364  =      0.000 ...   590.303 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+99 matching events found
+No baseline correction applied
+0 projection items activated
+99 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 99 events and 601 original time points ...
+11 bad epochs dropped
+Loading data for 99 events and 3601 original time points ...
+16 bad epochs dropped
+Dropped 3 epochs
+block 8.0 saved
+ds directory : /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_01.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -0.77   77.46    0.00 mm <->   -0.77   77.46    0.00 mm (orig :  -64.83   53.07 -259.69 mm) diff =    0.000 mm
+       0.77  -77.46    0.00 mm <->    0.77  -77.46    0.00 mm (orig :   37.69  -62.96 -254.55 mm) diff =    0.000 mm
+     107.66    0.00    0.00 mm <->  107.66    0.00    0.00 mm (orig :   66.59   65.16 -241.36 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_01.ds/S14-7_Attractor_20161122_01.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_01.ds/S14-7_Attractor_20161122_01.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_01.ds/S14-7_Attractor_20161122_01.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    286 x 1200 = 343200 samples from 405 chs
+    1194 samples omitted at the end
+Current compensation grade : 0
+/mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_01.ds 20161122
+get metadata from raw data
+831 events found
+Events id: [225 226 228 229 232 234]
+9373 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+9373 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+200 events found
+Events id: [226 232]
+2319 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 654275  =      0.000 ...   545.229 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 654275  =      0.000 ...   545.229 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 654275  =      0.000 ...   545.229 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+15 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+13 bad epochs dropped
+Dropped 5 epochs
+block 1.0 saved
+getting metadata from raw data form block 1
+206 events found
+Events id: [226 232]
+2365 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 664322  =      0.000 ...   553.602 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 664322  =      0.000 ...   553.602 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 664322  =      0.000 ...   553.602 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+99 matching events found
+No baseline correction applied
+0 projection items activated
+99 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 99 events and 601 original time points ...
+5 bad epochs dropped
+Loading data for 99 events and 3601 original time points ...
+9 bad epochs dropped
+Dropped 1 epoch
+block 2.0 saved
+getting metadata from raw data form block 2
+202 events found
+Events id: [226 232]
+2334 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 656804  =      0.000 ...   547.337 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 656804  =      0.000 ...   547.337 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 656804  =      0.000 ...   547.337 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+14 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+10 bad epochs dropped
+Dropped 7 epochs
+block 3.0 saved
+getting metadata from raw data form block 3
+206 events found
+Events id: [226 232]
+2351 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 667364  =      0.000 ...   556.137 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 667364  =      0.000 ...   556.137 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 667364  =      0.000 ...   556.137 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+17 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+2 bad epochs dropped
+Dropped 16 epochs
+block 4.0 saved
+ds directory : /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_02.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -1.40   77.44    0.00 mm <->   -1.40   77.44    0.00 mm (orig :  -64.53   51.44 -257.96 mm) diff =    0.000 mm
+       1.40  -77.44    0.00 mm <->    1.40  -77.44   -0.00 mm (orig :   36.58  -65.88 -255.43 mm) diff =    0.000 mm
+     107.32    0.00    0.00 mm <->  107.32   -0.00   -0.00 mm (orig :   67.95   61.07 -244.77 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_02.ds/S14-7_Attractor_20161122_02.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_02.ds/S14-7_Attractor_20161122_02.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_02.ds/S14-7_Attractor_20161122_02.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    321 x 1200 = 385200 samples from 405 chs
+    138 samples omitted at the end
+Current compensation grade : 0
+/mnt/homes/home024/gortega/megdata/S14-7_Attractor_20161122_02.ds 20161122
+get metadata from raw data
+847 events found
+Events id: [226 232 234]
+9683 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+9683 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+getting metadata from raw data form block 0
+207 events found
+Events id: [226 232]
+2392 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 674904  =      0.000 ...   562.420 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 674904  =      0.000 ...   562.420 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 674904  =      0.000 ...   562.420 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+11 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+9 bad epochs dropped
+Dropped 6 epochs
+block 5.0 saved
+getting metadata from raw data form block 1
+215 events found
+Events id: [226 232 234]
+2453 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 696404  =      0.000 ...   580.337 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 696404  =      0.000 ...   580.337 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 696404  =      0.000 ...   580.337 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+19 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+9 bad epochs dropped
+Dropped 14 epochs
+block 6.0 saved
+getting metadata from raw data form block 2
+205 events found
+Events id: [226 232]
+2370 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 684303  =      0.000 ...   570.253 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 684303  =      0.000 ...   570.253 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 684303  =      0.000 ...   570.253 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+17 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+19 bad epochs dropped
+Dropped 5 epochs
+block 7.0 saved
+getting metadata from raw data form block 3
+215 events found
+Events id: [226 232]
+2464 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+Reading 0 ... 685864  =      0.000 ...   571.553 secs...
+Setting up band-pass filter from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 685864  =      0.000 ...   571.553 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+Reading 0 ... 685864  =      0.000 ...   571.553 secs...
+Setting up low-pass filter at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+preprocess done
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+30 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+20 bad epochs dropped
+Dropped 14 epochs
+block 8.0 saved
