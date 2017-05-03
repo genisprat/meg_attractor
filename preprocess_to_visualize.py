@@ -68,19 +68,20 @@ def hash4(x):
 
 if __name__ == '__main__':
 #    subjects=['1''4','5','6','7','8','9','10','11','12','14','15','16','17','18','19']
-    subjects=['4','5','6','7','8','9','10','11','12','15','16','18']
+    subjects=['5','6','7','8','9','10','14']
 #    subject=int(subjects[int(sys.argv[1])])
-    subject=subjects[0]
+    subject=16
     cache={}
     path_cluster='/mnt/genis/Master_Project/'
     path_local='/home/genis/cluster_archive/Master_Project/'
+    path_hamburg='/home/genis/cluster_hamburg/'
     path=path_cluster+'megdata/'
-    mapname = path_cluster+'meg_analysis/key_maps/key_map_s'+str(subject)+'.pickle'
-    block=1
     
-#    for filename in glob.glob(os.path.join(path, '*S'+str(subject)+'-*')):
-    for ii in [1]:
-        filename=path_cluster+'megdata/S7-5_Attractor_20161103_01.ds'
+    block=3
+    
+    for filename in glob.glob(os.path.join(path, '*S'+str(subject)+'-7*02.ds')):
+#    for ii in [1]:
+#        filename=path_cluster+'megdata/S7-7_Attractor_20161103_01.ds'
         date=filename[-14:-6]
         print filename,date 
         raw = mne.io.read_raw_ctf(filename)
@@ -147,10 +148,10 @@ if __name__ == '__main__':
         mb, tb = meg.preprocessing.get_meta(r, mapping, trial_pins, 150, 151, other_pins) #get new metadata for each block
         print 'metadata done, preprocesing...',mb.session_number[0]
 #            
-        r, ants, artdef = meg.preprocessing.preprocess_block(r, blinks=True) #preprocess of each block looking for artifacts
+        r, ants, artdef,jumps,jumps_times = meg.preprocessing.preprocess_block(r, blinks=True) #preprocess of each block looking for artifacts
 #            #created hash: in thios column I will indentify the for each trial a different number.
 #  
-        r.plot()
+        r.plot( n_channels=2)
 
 
 

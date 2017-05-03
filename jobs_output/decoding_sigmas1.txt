@@ -1,0 +1,276 @@
+/home/genis/anaconda2/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+subject:  11
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block3-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block3-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+89 matching events found
+89 matching events found
+0 projection items activated
+89 89 7 3
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block1-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block1-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+79 matching events found
+79 matching events found
+0 projection items activated
+79 79 6 1
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block8-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block8-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+84 matching events found
+84 matching events found
+0 projection items activated
+84 84 7 8
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block4-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block4-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+81 matching events found
+81 matching events found
+0 projection items activated
+81 81 7 4
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block6-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block6-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+78 matching events found
+78 matching events found
+0 projection items activated
+78 78 6 6
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block5-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block5-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+77 matching events found
+77 matching events found
+0 projection items activated
+77 77 5 5
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block1-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block1-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+92 matching events found
+92 matching events found
+0 projection items activated
+92 92 7 1
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block3-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block3-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+78 matching events found
+78 matching events found
+0 projection items activated
+78 78 6 3
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block8-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block8-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+71 matching events found
+71 matching events found
+0 projection items activated
+71 71 6 8
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block2-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block2-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+81 matching events found
+81 matching events found
+0 projection items activated
+81 81 5 2
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block6-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block6-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+76 matching events found
+76 matching events found
+0 projection items activated
+76 76 7 6
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block4-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block4-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+82 matching events found
+82 matching events found
+0 projection items activated
+82 82 6 4
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block5-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block5-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+74 matching events found
+74 matching events found
+0 projection items activated
+74 74 6 5
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block7-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block7-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+82 matching events found
+82 matching events found
+0 projection items activated
+82 82 7 7
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block3-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block3-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+76 matching events found
+76 matching events found
+0 projection items activated
+76 76 5 3
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block2-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block2-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+84 matching events found
+84 matching events found
+0 projection items activated
+84 84 6 2
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block4-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block4-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+79 matching events found
+79 matching events found
+0 projection items activated
+79 79 5 4
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block1-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block1-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+89 matching events found
+89 matching events found
+0 projection items activated
+89 89 5 1
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block7-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s6_block7-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+80 matching events found
+80 matching events found
+0 projection items activated
+80 80 6 7
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block5-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block5-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+82 matching events found
+82 matching events found
+0 projection items activated
+82 82 7 5
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block6-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s5_block6-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+83 matching events found
+83 matching events found
+0 projection items activated
+83 83 5 6
+hi2
+/home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block2-epo.fif.gz
+hi
+Reading /home/genis/cluster_archive/Master_Project/process_data/resp_sub11_s7_block2-epo.fif.gz ...
+    Read 5 compensation matrices
+    Found the data of interest:
+        t =   -2500.00 ...     500.00 ms (None)
+        5 CTF compensation matrices available
+94 matching events found
+94 matching events found
+0 projection items activated
+94 94 7 2
+hi2
+data loaded, start decoding, #trials 3
+605 matching events found
+0 bad epochs dropped
+581 matching events found
+0 bad epochs dropped
+605 matching events found
+0 bad epochs dropped
+completed isigma 2
+all_done 9.34041596651

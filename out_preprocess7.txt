@@ -1,0 +1,584 @@
+/mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_01.ds 20161107
+ds directory : /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_01.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -1.77   83.13    0.00 mm <->   -1.77   83.13    0.00 mm (orig :  -69.30   48.60 -252.45 mm) diff =    0.000 mm
+       1.77  -83.13    0.00 mm <->    1.77  -83.13    0.00 mm (orig :   39.32  -77.27 -256.03 mm) diff =    0.000 mm
+     105.53    0.00    0.00 mm <->  105.53    0.00    0.00 mm (orig :   66.38   52.84 -252.36 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_01.ds/S7-6_Attractor_20161107_01.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_01.ds/S7-6_Attractor_20161107_01.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_01.ds/S7-6_Attractor_20161107_01.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    451 x 1200 = 541200 samples from 405 chs
+    198 samples omitted at the end
+Current compensation grade : 0
+get metadata from raw data
+287 events found
+Events id: [226 232]
+3309 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+3309 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+blocks:  [ 1.  2.]
+getting metadata from raw data form block 0
+199 events found
+Events id: [226 232]
+2300 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+hi preprocess_block
+hi
+Reading 0 ... 639040  =      0.000 ...   532.533 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 639040  =      0.000 ...   532.533 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 639040  =      0.000 ...   532.533 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+bad_channels:  [u'MLF21-3705']
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+11 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+12 bad epochs dropped
+Dropped 2 epochs
+aaaa_session:  6.0 block: 1.0
+block 1.0 saved
+getting metadata from raw data form block 1
+88 events found
+Events id: [226 232]
+987 events found
+Events id: [  3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100 101
+ 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+hi preprocess_block
+hi
+Reading 0 ... 300937  =      0.000 ...   250.781 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 300937  =      0.000 ...   250.781 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 300937  =      0.000 ...   250.781 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(21.839166666666667, 0.0074999999999999997), (24.405000000000001, 0.0074999999999999997), (36.466666666666669, 0.0074999999999999997), (45.950833333333335, 0.0066666666666666671), (47.494166666666665, 0.0066666666666666671), (70.423333333333332, 0.0066666666666666671), (125.59, 0.0066666666666666671), (126.28416666666666, 0.0066666666666666671), (154.29499999999999, 0.0074999999999999997), (182.16583333333332, 0.0058333333333333336), (196.86500000000001, 0.0074999999999999997), (221.56, 0.0074999999999999997), (223.31916666666666, 0.0074999999999999997), (224.35916666666665, 0.0074999999999999997)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(209.12583333333333, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(209.125, 0.0033333333333333335)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(209.125, 0.0016666666666666668)], [], [], [], [], [(209.12583333333333, 0.0016666666666666668)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(209.125, 0.0025000000000000001)], [], [], [], [], [(208.33250000000001, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(209.125, 0.0025000000000000001)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+42 matching events found
+No baseline correction applied
+0 projection items activated
+42 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 42 events and 601 original time points ...
+4 bad epochs dropped
+Loading data for 42 events and 3601 original time points ...
+8 bad epochs dropped
+Dropped 2 epochs
+aaaa_session:  6.0 block: 2.0
+block 2.0 saved
+/mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_02.ds 20161107
+ds directory : /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_02.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -1.41   83.40    0.00 mm <->   -1.41   83.40    0.00 mm (orig :  -72.63   46.45 -253.31 mm) diff =    0.000 mm
+       1.41  -83.40    0.00 mm <->    1.41  -83.40    0.00 mm (orig :   41.10  -75.59 -252.86 mm) diff =    0.000 mm
+     105.69    0.00    0.00 mm <->  105.69   -0.00    0.00 mm (orig :   62.75   56.17 -251.96 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_02.ds/S7-6_Attractor_20161107_02.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-6_Attractor_20161107_02.ds/S7-6_Attractor_20161107_02.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    784 x 1200 = 940800 samples from 405 chs
+    633 samples omitted at the end
+Current compensation grade : 0
+get metadata from raw data
+339 events found
+Events id: [226 232 234]
+3920 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+3920 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+blocks:  [ 5.  6.]
+getting metadata from raw data form block 0
+200 events found
+Events id: [226 232 234]
+2317 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+hi preprocess_block
+hi
+Reading 0 ... 624625  =      0.000 ...   520.521 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 624625  =      0.000 ...   520.521 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 624625  =      0.000 ...   520.521 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(166.75166666666667, 0.00083333333333333339), (166.81833333333333, 0.0025000000000000001)], [(13.128333333333334, 0.0058333333333333336), (67.608333333333334, 0.0058333333333333336), (70.215000000000003, 0.0050000000000000001), (85.730833333333337, 0.0058333333333333336), (120.89916666666667, 0.0050000000000000001), (214.69166666666666, 0.0058333333333333336), (230.11000000000001, 0.0041666666666666666), (328.71833333333331, 0.0058333333333333336), (418.38499999999999, 0.0058333333333333336), (427.64583333333331, 0.0058333333333333336), (479.53416666666669, 0.0050000000000000001), (488.78500000000003, 0.0066666666666666671), (501.06999999999999, 0.0058333333333333336)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(166.71083333333334, 0.0016666666666666668), (166.74250000000001, 0.00083333333333333339), (166.75083333333333, 0.0033333333333333335), (166.78, 0.0033333333333333335), (166.8175, 0.0033333333333333335), (166.82749999999999, 0.0025000000000000001), (167.05416666666667, 0.0016666666666666668)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(166.75166666666667, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(166.81833333333333, 0.0016666666666666668)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+12 bad epochs dropped
+Dropped 4 epochs
+aaaa_session:  6.0 block: 5.0
+block 5.0 saved
+getting metadata from raw data form block 1
+139 events found
+Events id: [226 232]
+1590 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 6.0
+hi preprocess_block
+hi
+Reading 0 ... 454082  =      0.000 ...   378.402 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 454082  =      0.000 ...   378.402 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 454082  =      0.000 ...   378.402 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(52.965833333333336, 0.0058333333333333336), (71.650833333333338, 0.0050000000000000001), (203.44999999999999, 0.0025000000000000001), (218.24916666666667, 0.0025000000000000001), (349.22583333333336, 0.0050000000000000001)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(114.11499999999999, 0.00083333333333333339), (236.87833333333333, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(114.5625, 0.00083333333333333339), (236.87833333333333, 0.00083333333333333339)], [], [], [], [], [], [], [(114.64833333333333, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+68 matching events found
+No baseline correction applied
+0 projection items activated
+68 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 68 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 68 events and 3601 original time points ...
+4 bad epochs dropped
+Dropped 6 epochs
+aaaa_session:  6.0 block: 6.0
+block 6.0 saved
+/mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds 20161103
+ds directory : /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+       0.50   82.45    0.00 mm <->    0.50   82.45    0.00 mm (orig :  -70.99   45.94 -250.14 mm) diff =    0.000 mm
+      -0.50  -82.45    0.00 mm <->   -0.50  -82.45    0.00 mm (orig :   38.51  -77.35 -250.93 mm) diff =    0.000 mm
+     108.08    0.00    0.00 mm <->  108.08    0.00    0.00 mm (orig :   64.11   56.50 -247.07 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds/S7-5_Attractor_20161103_01.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds/S7-5_Attractor_20161103_01.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds/S7-5_Attractor_20161103_01.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds/S7-5_Attractor_20161103_01.3_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds/S7-5_Attractor_20161103_01.4_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_01.ds/S7-5_Attractor_20161103_01.5_meg4: 
+    System clock channel is available, checking which samples are valid.
+    480 x 1200 = 576000 samples from 405 chs
+Current compensation grade : 0
+get metadata from raw data
+239 events found
+Events id: [226 228]
+2799 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+2799 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+blocks:  [ 1.]
+getting metadata from raw data form block 0
+239 events found
+Events id: [226 228]
+2795 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+hi preprocess_block
+hi
+Reading 0 ... 783888  =      0.000 ...   653.240 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 783888  =      0.000 ...   653.240 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 783888  =      0.000 ...   653.240 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(394.21249999999998, 0.00083333333333333339), (489.4325, 0.00083333333333333339), (489.56666666666666, 0.0025000000000000001)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(489.4325, 0.00083333333333333339), (489.56583333333333, 0.0033333333333333335)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+117 matching events found
+No baseline correction applied
+0 projection items activated
+117 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 117 events and 601 original time points ...
+9 bad epochs dropped
+Loading data for 117 events and 3601 original time points ...
+10 bad epochs dropped
+Dropped 1 epoch
+aaaa_session:  5.0 block: 1.0
+block 1.0 saved
+/mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_02.ds 20161114
+ds directory : /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_02.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -0.65   83.53    0.00 mm <->   -0.65   83.53   -0.00 mm (orig :  -66.98   56.84 -251.55 mm) diff =    0.000 mm
+       0.65  -83.53    0.00 mm <->    0.65  -83.53    0.00 mm (orig :   40.32  -71.15 -247.36 mm) diff =    0.000 mm
+     105.73    0.00    0.00 mm <->  105.73   -0.00    0.00 mm (orig :   67.70   60.02 -239.48 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_02.ds/S7-7_Attractor_20161114_02.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_02.ds/S7-7_Attractor_20161114_02.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_02.ds/S7-7_Attractor_20161114_02.2_meg4: 
+    System clock channel is available, checking which samples are valid.
+    386 x 1200 = 463200 samples from 405 chs
+    720 samples omitted at the end
+Current compensation grade : 0
+get metadata from raw data
+306 events found
+Events id: [226 232]
+3526 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+3526 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+blocks:  [ 4.  5.]
+getting metadata from raw data form block 0
+204 events found
+Events id: [226 232]
+2354 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+hi preprocess_block
+hi
+Reading 0 ... 645230  =      0.000 ...   537.692 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 645230  =      0.000 ...   537.692 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 645230  =      0.000 ...   537.692 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [(426.29416666666668, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(37.795000000000002, 0.0074999999999999997), (41.334166666666668, 0.0074999999999999997), (310.17916666666667, 0.0074999999999999997), (327.69416666666666, 0.0083333333333333332), (351.18666666666667, 0.0066666666666666671), (390.75, 0.0074999999999999997), (473.88583333333332, 0.0074999999999999997), (510.09750000000003, 0.0066666666666666671)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(107.33416666666666, 0.00083333333333333339)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+12 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+10 bad epochs dropped
+Dropped 8 epochs
+aaaa_session:  7.0 block: 4.0
+block 4.0 saved
+getting metadata from raw data form block 1
+101 events found
+Events id: [226 232]
+1142 events found
+Events id: [  3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100 101
+ 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+hi preprocess_block
+hi
+Reading 0 ... 325689  =      0.000 ...   271.408 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 325689  =      0.000 ...   271.408 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 325689  =      0.000 ...   271.408 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(14.231666666666667, 0.0066666666666666671), (88.233333333333334, 0.0066666666666666671), (112.69416666666666, 0.0074999999999999997), (124.41333333333333, 0.0074999999999999997), (156.28166666666667, 0.0074999999999999997), (197.19583333333333, 0.0066666666666666671), (264.10083333333336, 0.0066666666666666671)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(168.45416666666668, 0.0033333333333333335)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+49 matching events found
+No baseline correction applied
+0 projection items activated
+49 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 49 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 49 events and 3601 original time points ...
+9 bad epochs dropped
+Dropped 6 epochs
+aaaa_session:  7.0 block: 5.0
+block 5.0 saved
+/mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_02.ds 20161103
+ds directory : /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_02.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -0.10   82.08    0.00 mm <->   -0.10   82.08   -0.00 mm (orig :  -69.92   40.81 -255.41 mm) diff =    0.000 mm
+       0.10  -82.08    0.00 mm <->    0.10  -82.08    0.00 mm (orig :   45.92  -75.44 -251.13 mm) diff =    0.000 mm
+     107.10    0.00    0.00 mm <->  107.10    0.00    0.00 mm (orig :   63.57   58.11 -244.92 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/genis/Master_Project/megdata/S7-5_Attractor_20161103_02.ds/S7-5_Attractor_20161103_02.meg4: 
+    System clock channel is available, checking which samples are valid.
+    749 x 1200 = 898800 samples from 405 chs
+    861 samples omitted at the end
+Current compensation grade : 0
+get metadata from raw data
+242 events found
+Events id: [226 232]
+2835 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+2835 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+blocks:  [ 7.]
+getting metadata from raw data form block 0
+242 events found
+Events id: [226 232]
+2834 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 5.0
+hi preprocess_block
+hi
+Reading 0 ... 742901  =      0.000 ...   619.084 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 742901  =      0.000 ...   619.084 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 742901  =      0.000 ...   619.084 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [(356.35916666666668, 0.00083333333333333339), (356.36833333333334, 0.00083333333333333339), (356.37833333333333, 0.00083333333333333339), (356.92916666666667, 0.0016666666666666668), (356.93666666666667, 0.0041666666666666666), (356.94583333333333, 0.0041666666666666666), (356.96333333333331, 0.0033333333333333335), (356.97250000000003, 0.0033333333333333335)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(356.93833333333333, 0.0016666666666666668), (356.94749999999999, 0.0016666666666666668)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(356.9375, 0.0033333333333333335), (356.94749999999999, 0.0016666666666666668)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(356.94749999999999, 0.0016666666666666668), (356.97250000000003, 0.0025000000000000001)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+119 matching events found
+No baseline correction applied
+0 projection items activated
+119 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 119 events and 601 original time points ...
+17 bad epochs dropped
+Loading data for 119 events and 3601 original time points ...
+18 bad epochs dropped
+Dropped 3 epochs
+aaaa_session:  5.0 block: 7.0
+block 7.0 saved
+/mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_01.ds 20161114
+ds directory : /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_01.ds
+    res4 data read.
+    hc data read.
+    Separate EEG position data file read.
+    Quaternion matching (desired vs. transformed):
+      -0.29   83.55    0.00 mm <->   -0.29   83.55    0.00 mm (orig :  -67.79   57.80 -255.04 mm) diff =    0.000 mm
+       0.29  -83.55    0.00 mm <->    0.29  -83.55   -0.00 mm (orig :   36.73  -72.41 -248.44 mm) diff =    0.000 mm
+     105.31    0.00    0.00 mm <->  105.32    0.00   -0.00 mm (orig :   66.84   58.32 -252.26 mm) diff =    0.000 mm
+    Coordinate transformations established.
+    Polhemus data for 3 HPI coils added
+    Device coordinate locations for 3 HPI coils added
+    64 EEG electrode locations assigned to channel info.
+    64 EEG locations added to Polhemus data.
+    Measurement info composed.
+Finding samples for /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_01.ds/S7-7_Attractor_20161114_01.meg4: 
+    System clock channel is available, checking which samples are valid.
+    1104 x 1200 = 1324800 samples from 405 chs
+Finding samples for /mnt/genis/Master_Project/megdata/S7-7_Attractor_20161114_01.ds/S7-7_Attractor_20161114_01.1_meg4: 
+    System clock channel is available, checking which samples are valid.
+    937 x 1200 = 1124400 samples from 405 chs
+    1038 samples omitted at the end
+Current compensation grade : 0
+get metadata from raw data
+289 events found
+Events id: [226 232]
+3330 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+3330 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+blocks:  [ 1.  2.]
+getting metadata from raw data form block 0
+199 events found
+Events id: [226 232]
+2301 events found
+Events id: [  2   3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100
+ 101 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+hi preprocess_block
+hi
+Reading 0 ... 615675  =      0.000 ...   513.062 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 615675  =      0.000 ...   513.062 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 615675  =      0.000 ...   513.062 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+bad_channels:  [u'MLF21-3705']
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+98 matching events found
+No baseline correction applied
+0 projection items activated
+98 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 98 events and 601 original time points ...
+16 bad epochs dropped
+Loading data for 98 events and 3601 original time points ...
+11 bad epochs dropped
+Dropped 7 epochs
+aaaa_session:  7.0 block: 1.0
+block 1.0 saved
+getting metadata from raw data form block 1
+90 events found
+Events id: [226 232]
+1018 events found
+Events id: [  3   4   5   6   7   8  30  40  50  60  61  62  70  80  89  91 100 101
+ 111 112 113 150 151]
+metadata done, preprocesing... 7.0
+hi preprocess_block
+hi
+Reading 0 ... 288049  =      0.000 ...   240.041 secs...
+Band-pass filtering from 1.1e+02 - 1.4e+02 Hz
+The default output type is "ba" in 0.13 but will change to "sos" in 0.14
+Reading 0 ... 288049  =      0.000 ...   240.041 secs...
+Low-pass filtering at 1 Hz
+Multiple deprecated filter parameters were used:
+phase in 0.13 is "zero-double" but will change to "zero" in 0.14
+fir_window in 0.13 is "hann" but will change to "hamming" in 0.14
+upper transition bandwidth in 0.13 is 0.5 Hz but will change to "auto" in 0.14
+The default filter length in 0.13 is "10s" but will change to "auto" in 0.14
+Reading 0 ... 288049  =      0.000 ...   240.041 secs...
+Low-pass filtering at 1 Hz
+h_trans_bandwidth chosen to be 2.0 Hz
+Filter length of 3960 samples (3.300 sec) selected
+[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [(4.0525000000000002, 0.0066666666666666671), (27.013333333333332, 0.0066666666666666671), (63.505833333333335, 0.0066666666666666671), (79.702500000000001, 0.0066666666666666671), (99.410833333333329, 0.0074999999999999997), (121.30083333333333, 0.0074999999999999997), (128.04333333333332, 0.0066666666666666671), (147.57166666666666, 0.0058333333333333336), (166.37333333333333, 0.0058333333333333336), (171.84916666666666, 0.0066666666666666671), (179.2475, 0.0074999999999999997), (229.8725, 0.0066666666666666671)], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+43 matching events found
+No baseline correction applied
+0 projection items activated
+43 matching events found
+No baseline correction applied
+0 projection items activated
+Loading data for 43 events and 601 original time points ...
+7 bad epochs dropped
+Loading data for 43 events and 3601 original time points ...
+11 bad epochs dropped
+Dropped 3 epochs
+aaaa_session:  7.0 block: 2.0
+block 2.0 saved

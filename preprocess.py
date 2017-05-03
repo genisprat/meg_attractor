@@ -12,7 +12,7 @@ import sys
 import glob
 import os
 import numpy as np
-
+import time
 def hash2(x,cache):
 
     x = tuple(x)
@@ -46,6 +46,7 @@ def hash3(x):
         return cache[x2],0
 
 def hash4(x):
+    x.append(0) #last 0 means no repetiotion
     x2 = tuple(x)
     if len(cache)==0:
         sub=int(x[0])
@@ -54,11 +55,14 @@ def hash4(x):
         return x_num,0
     try:
         print cache[x2]
-        print x,'already exist',cache[x2],date,filename
+
+        print x,'already exist',cache[x2],date,max(cache.values())
         x_num=max(cache.values())+1
-        
-        
-        return x_num,1 #if it already exist then I add a 2 at the end.
+        print x_num
+        x[-1]=x[-1]+1#if it already exist then I add a 1 at the end.
+        x2=tuple(x)
+        cache[x2]=x_num
+        return x_num,1 
     except KeyError:
         x_num=max(cache.values())+1
         cache[x2] = x_num
@@ -67,18 +71,22 @@ def hash4(x):
 
 
 if __name__ == '__main__':
-#    subjects=['1''4','5','6','7','8','9','10','11','12','14','15','16','17','18','19']
-    subjects=['4','5','6','7','8','9','10','11','12','15','16','18']
-#    subject=int(subjects[int(sys.argv[1])])
-    subject=subjects[0]
+#    subjects=['1','4','5','6','7','8','9','10','11','12','14','15','16','17','18','19']
+#    subjects=['5','6','8','9','10','11','12','15','16','18']
+    subjects=['7','9']
+    subject=int(subjects[int(sys.argv[1])])
+#    subject=7
     cache={}
     path_cluster='/mnt/genis/Master_Project/'
     path_local='/home/genis/cluster_archive/Master_Project/'
-    path=path_cluster+'megdata/'
-    mapname = path_cluster+'meg_analysis/key_maps/key_map_s'+str(subject)+'.pickle'
-    for filename in glob.glob(os.path.join(path, '*S'+str(subject)+'-*')):
+    path=path_local
+    path_megdata=path+'megdata/'
+    
+    mapname = path+'meg_analysis/key_maps/key_map_s'+str(subject)+'.pickle'
+    t_i=time.time()
+    for filename in glob.glob(os. path.join( path_megdata, '*S'+str(subject)+'-*')):
 #    for ii in [1]:
-#        filename=path_cluster+'megdata/S4-5_Attractor_20161110_01.ds'
+#        filename=path_local+'megdata/S1-7_Attractor_20161025_01.ds'
         date=filename[-14:-6]
         print filename,date 
         raw = mne.io.read_raw_ctf(filename)
@@ -147,6 +155,12 @@ if __name__ == '__main__':
             
             r, ants, artdef = meg.preprocessing.preprocess_block(r, blinks=True) #preprocess of each block looking for artifacts
             #created hash: in thios column I will indentify the for each trial a different number.
+
+            bad_channels=r.info['bads']
+            if len(r.info['bads'])>0:
+              r.load_data()
+              r.interpolate_bads(reset_bads=False)
+              r.info['bads']=[]
             
             trial_repeat=[]
             mb.loc[:,'hash']=1
@@ -160,8 +174,8 @@ if __name__ == '__main__':
             
             print 'aaaa_session: ',mb.session_number[0], 'block:',mb.block_start[0] 
             if len(rlmeta)>0:
-                rlmeta.to_hdf(path_cluster+'process_data/resp_meta_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'.hdf', 'meta')
-                resplock.save(path_cluster+'process_data/resp_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'-epo.fif.gz')
+                rlmeta.to_hdf(path+'process_data/resp_meta_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'.hdf', 'meta')
+                resplock.save(path+'process_data/resp_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'-epo.fif.gz')
                 print 'block',bnum,'saved' 
             else:
                 print 'WARNING ALL TRIALS DROP BECAUSE OF ARTIFACTS', subject,bnum
@@ -179,12 +193,12 @@ if __name__ == '__main__':
             block_stat['subject']=subject
             block_stat['bnum']=bnum
             block_stat['session']=mb.session_number[0]
-    
-            file_stat=open(path_cluster+'process_data/resp_bstat_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'.pickle','w')
+            block_stat['bad_channels']=bad_channels
+            file_stat=open(path+'process_data/resp_bstat_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'.pickle','w')
             pickle.dump(block_stat,file_stat)
             file_stat.close()
             
-            file_stat=open(path_cluster+'process_data/resp_artifacts_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'.pickle','w')
+            file_stat=open(path+'process_data/resp_artifacts_sub'+str(subject)+'_s'+str(int(mb.session_number[0]))+'_block'+str(int(mb.block_start[0]))+'.pickle','w')
             artifact={}
             artifact['ants']=ants
             artifact['artdef']=artdef
@@ -195,6 +209,8 @@ if __name__ == '__main__':
     f=open(mapname,'wb')
     pickle.dump(cache, f)
     f.close()
+
+print 'all_done',(time.time()-t_i)/60.0
     
 
 
