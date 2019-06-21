@@ -1,8 +1,0 @@
-data loaded
-Traceback (most recent call last):
-  File "decoding_sigmas.py", line 60, in <module>
-    rlspock_all[isigma].append(rlspock[meta_aux[meta.noise==isigma].index])
-  File "/home/genis/mne-python-master/mne/epochs.py", line 1399, in __getitem__
-    key_selection = epochs.selection[select]
-IndexError: index 147 is out of bounds for axis 1 with size 147
-
