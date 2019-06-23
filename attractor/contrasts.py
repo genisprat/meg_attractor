@@ -22,13 +22,12 @@ contrasts = {
 }
 
 
-
 def submit_contrasts(collect=False):
-    import numpy as np    
+    import numpy as np
     import time
 
     tasks = []
-    subjects = [1,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19]
+    subjects = [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19]
     for subject in subjects:
         tasks.append((contrasts, subject))
     res = []
@@ -57,16 +56,18 @@ def get_contrasts(
     meta = meta_data.load_meta_data(subject)
     new_contrasts = {}
     for key, value in contrasts.items():
-        new_contrasts[key + "lat"] = [value[0], value[1], 'lh_is_ipsi']
+        new_contrasts[key + "lat"] = [value[0], value[1], "lh_is_ipsi"]
         new_contrasts[key + "avg"] = [value[0], value[1], "avg"]
     contrasts = new_contrasts
 
-    files = {'stimulus': utils.get_filenames(subject, epoch="stimulus")[1],
-              'response':utils.get_filenames(subject, epoch="response")[1],
-              'baseline': utils.get_filenames(subject, epoch="stimulus")[1]}
+    files = {
+        "stimulus": utils.get_filenames(subject, epoch="stimulus")[1],
+        "response": utils.get_filenames(subject, epoch="response")[1],
+        "baseline": utils.get_filenames(subject, epoch="stimulus")[1],
+    }
 
     response_left = meta.choice == -1
-    left_correct = meta.stim_sign == -1 #!TODO!
+    left_correct = meta.stim_sign == -1  #!TODO!
     meta = augment_data(meta, response_left, left_correct)
 
     cps = []
@@ -76,7 +77,7 @@ def get_contrasts(
                 contrast = compute_contrast(
                     contrasts,
                     files[epoch],
-                    files['baseline'],
+                    files["baseline"],
                     meta,
                     (-0.35, -0.1),
                     baseline_per_condition=baseline_per_condition,
@@ -104,6 +105,7 @@ def _eval(func, args, collect=False, **kw):
     Intermediate helper to toggle cluster vs non cluster
     """
     from pymeg import parallel
+
     if not collect:
         if not func.in_store(*args):
             print("Submitting %s to %s for parallel execution" % (len(args), func))
@@ -168,4 +170,65 @@ def precompute_stats(contrast, epoch, hemi):
     return all_stats
 
 
+def rename(df):
+    return df.rename(
+        index={
+            "alllat": "all",
+            "allavg": "all",
+            "handlat": "hand",
+            "handavg": "hand",
+            "choicelat": "choice",
+            "choiceavg": "choice",
+            "stimuluslat": "stimulus",
+            "stimulusavg": "stimulus",
+            "lh_is_ipsi": "lateralized",
+            "avg": "average",
+        }
+    )
 
+
+def plot(df, contrast="hand", hemi="lateralized"):
+    from pymeg import contrast_tfr_plots as ctp
+
+    c = ctp.PlotConfig(
+        {"stimulus": (-0.35, 3.25), "response": (-1, 0.21)},  # Time windows for epochs
+        ["all", "choice", "hand", "stimulus"],  # Contrast names
+        stat_windows={"stimulus": (-0.5, 3.25), "response": (-1, 0.5)},
+    )
+
+    c.configure_epoch(
+        "stimulus",
+        **{
+            "xticks": [0, 1, 2, 2.5],
+            "xticklabels": ["0", "1"],
+            "yticks": [25, 50, 75, 100],
+            "yticklabels": [25, 50, 75, 100],
+            "xlabel": "time",
+            "ylabel": "Freq",
+        },
+    )
+
+    c.configure_epoch(
+        "response",
+        **{
+            "xticks": [0],
+            "xticklabels": ["0", "1"],
+            "yticks": [25, 50, 75, 100],
+            "yticklabels": [25, 50, 75, 100],
+            "xlabel": "time",
+            "ylabel": "Freq",
+        },
+    )
+
+    for key, values in {
+        "choice": {"vmin": -25, "vmax": 25},
+        "confidence": {"vmin": -25, "vmax": 25},
+        "confidence_asym": {"vmin": -25, "vmax": 25},
+        "hand": {"vmin": -25, "vmax": 25},
+        "stimulus": {"vmin": -25, "vmax": 25},
+    }.items():
+        c.configure_contrast(key, **values)
+
+    _ = ctp.plot_streams_fig(
+        df.query('contrast=="%s" & hemi=="%s"' % (contrast, hemi)), contrast, c
+    )
