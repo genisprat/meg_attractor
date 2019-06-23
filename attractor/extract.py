@@ -27,7 +27,8 @@ subject='S%i' % (subject_int)
 print('**********************************starting',subject_int,session_int,block,'******************')
 # lcmv_gortega.extract_reconstruct_tfr_block(subject,session_int,block,'stimulus',signal_type='HF')
 # lcmv_gortega.extract_reconstruct_tfr_block(subject,session_int,block,'response',signal_type='HF')
-lcmv_gortega.extract_reconstruct_tfr_block(subject,session_int,block,'stimulus',signal_type='LF')
+# lcmv_gortega.extract_reconstruct_tfr_block(subject,session_int,block,'stimulus',signal_type='LF')
+lcmv_gortega.extract_reconstruct_tfr_block(subject,session_int,block,'response',signal_type='LF')
 
 
 
