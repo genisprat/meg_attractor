@@ -5,6 +5,7 @@ import os
 import glob
 import pandas as pd
 from attractor import utils
+from pathlib import Path
 
 def hash4(x):
     x.append(0)  # last 0 means no repetiotion
@@ -39,9 +40,12 @@ def load_meta_data(subject):
                 isigma = isigma + 1
         return isigma
 
-    # path='/storage/genis/att_behavioral_data/data_S'+str(subject)
-    # path='/archive/genis/Master_project/att_behavioral_data/data_S'+str(subject)
-    path = "/storage/genis/att_behavioral_data/data_S" + str(subject)
+    if os.path.isfile('/home/nwilming/this_is_uke'):
+        path = Path('/home/gortega/preprocessed_megdata/behavioral')
+    else:
+        path = Path('/storage/genis/preprocessed_megdata')
+    
+    path = path / ("data_S" + str(subject))
 
     sigma0 = 0.02
     sigmaf = 1.0
@@ -69,8 +73,7 @@ def load_meta_data(subject):
     block_number = []
     session_number = []
     trial_number = []
-    for filename in glob.glob(os.path.join(path, "*Exp*SS*.mat")):
-        print(filename)
+    for filename in path.glob("*Exp*SS*.mat"):
         mat_contents = sio.loadmat(filename)
         # S_duration.append(mat_contents['t_sesion'][0][0])
         if (len(mat_contents["results"][0]) > 3):  ##alguns cop el programa falla i l'he de para abans.
@@ -106,9 +109,6 @@ def load_meta_data(subject):
 
 
     choice=(2*np.array(correct)-1)*np.array(stim_sign)
-    print(np.unique(stim_sign))
-    print(np.unique(correct))
-    print(np.unique(choice))
     data = {}
     data["correct"] = correct
     data["stim"] = stim

@@ -1,9 +1,14 @@
 import os
 import pandas as pd
-from attractor import utils
-from pymeg.contrast_tfr import Cache, compute_contrast, augment_data
+from attractor import utils, meta_data
+from pymeg.contrast_tfr import Cache, compute_contrast, augment_data, logging
 
-import logging
+
+logging.getLogger().setLevel(logging.INFO)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+
 from joblib import Memory
 
 memory = Memory(location=os.environ["PYMEG_CACHE_DIR"], verbose=0)
@@ -11,21 +16,45 @@ memory = Memory(location=os.environ["PYMEG_CACHE_DIR"], verbose=0)
 
 contrasts = {
     "all": (["all"], [1]),
-    
-    #"choice": (["hit", "fa", "miss", "cr"], (1, 1, -1, -1)),
-    #"stimulus": (["hit", "fa", "miss", "cr"], (1, -1, 1, -1)),
-    #"hand": (["left", "right"], (1, -1)),
+    "choice": (["hit", "fa", "miss", "cr"], (1, 1, -1, -1)),
+    "stimulus": (["hit", "fa", "miss", "cr"], (1, -1, 1, -1)),
+    "hand": (["left", "right"], (1, -1)),
 }
 
 
-#@memory.cache()
+
+def submit_contrasts(collect=False):
+    import numpy as np    
+    import time
+
+    tasks = []
+    subjects = [1,4,5,6,7,8,9,10,11,12,14,15,16,17,18,19]
+    for subject in subjects:
+        tasks.append((contrasts, subject))
+    res = []
+    for cnt, task in enumerate(tasks):
+        try:
+            r = _eval(
+                get_contrasts,
+                task,
+                collect=collect,
+                walltime="02:30:00",
+                tasks=6,
+                memory=70,
+            )
+            res.append(r)
+        except RuntimeError:
+            print("Task", task, " not available yet")
+    return res
+
+
+@memory.cache()
 def get_contrasts(
     contrasts, subject, epochs=["stimulus", "response"], baseline_per_condition=False
 ):
-    #hemis = ['lh_is_ipsi', "avg"]
 
     # Load meta!
-    meta = utils.get_meta(subject)
+    meta = meta_data.load_meta_data(subject)
     new_contrasts = {}
     for key, value in contrasts.items():
         new_contrasts[key + "lat"] = [value[0], value[1], 'lh_is_ipsi']
@@ -36,8 +65,8 @@ def get_contrasts(
               'response':utils.get_filenames(subject, epoch="response")[1],
               'baseline': utils.get_filenames(subject, epoch="stimulus")[1]}
 
-    response_left = meta.response == 1
-    left_correct = meta.response == 1 #!TODO!
+    response_left = meta.choice == -1
+    left_correct = meta.stim_sign == -1 #!TODO!
     meta = augment_data(meta, response_left, left_correct)
 
     cps = []
@@ -70,14 +99,11 @@ def get_contrasts(
     return contrast
 
 
-def submit_contrasts(collect=False):
-    pass
-
-
 def _eval(func, args, collect=False, **kw):
     """
     Intermediate helper to toggle cluster vs non cluster
     """
+    from pymeg import parallel
     if not collect:
         if not func.in_store(*args):
             print("Submitting %s to %s for parallel execution" % (len(args), func))
@@ -140,3 +166,6 @@ def precompute_stats(contrast, epoch, hemi):
         task = contrast_tfr.get_tfr(df.query('cluster=="%s"' % area), time_cutoff)
         all_stats.update(contrast_tfr.par_stats(*task, n_jobs=1))
     return all_stats
+
+
+
