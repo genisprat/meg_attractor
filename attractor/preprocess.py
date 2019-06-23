@@ -70,13 +70,21 @@ def get_blocks(meta, timing):
 
 
 def submit_all():
+    from pymeg import parallel
     # fmt: off
-    subjects = ["1","4","5","6","7",
-        "8","9","10","11","12","14",
-        "15","16","17","18","19",
+    subjects = [1,4,5,6,7,
+        8,9,10,11,12,14,
+        15,16,17,18,19,
     ]
+
     # fmt: on
-    #    subject=int(subjects[int(sys.argv[1])])
+    for session in [5,6,7]:
+        for subject in subjects:
+            parallel.pmap(preprocess, [(subject,session)],
+                walltime="02:30:00",
+                tasks=3,
+                memory=30,)
+
 
 
 def preprocess(subject, session):
@@ -184,7 +192,7 @@ def preprocess(subject, session):
 
             r = raw.copy()  # created a copy to do not change raw
             r.crop(
-                tmin=time_block[i] / 1200.0 - 10,
+                tmin=tb.trial_start_time.min() / 1200.0 - 1,
                 tmax=1 + (tb.feedback_time.max() / 1200.0),
             )  # crop for each block
             r = interpolate_bad_channels(subject, session, r)
@@ -203,6 +211,7 @@ def preprocess(subject, session):
 
             print("Notch filtering")
             midx = np.where([x.startswith("M") for x in r.ch_names])[0]
+            r.load_data()
             r.notch_filter(np.arange(50, 251, 50), picks=midx)
 
             bad_channels = r.info["bads"]
@@ -214,6 +223,8 @@ def preprocess(subject, session):
             trial_repeat = []
             mb.loc[:, "hash"] = hash(subject, mb.session_number, bnum, mb.trial_num)
 
+            # Create a colum for onset of first dot
+            tb.loc[:, 'first_dot_time'] = np.array([x[0] for x in tb.dot_onset_time])
             stimmeta, stimlock = preprocessing.get_epoch(
                 r,
                 mb.dropna(),
