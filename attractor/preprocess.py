@@ -133,6 +133,8 @@ def preprocess(subject, session):
     ):
         date = filename[-14:-6]
         raw = mne.io.read_raw_ctf(filename)
+        #raw._first_samps = np.cumsum(raw._raw_lengths) - raw._raw_lengths[0]
+        #raw._last_samps = np.cumsum(raw._last_samps)
 
         ##pins and mapping
         other_pins = {100: "session_number", 101: "block_start"}
@@ -172,39 +174,39 @@ def preprocess(subject, session):
                 bnum,
                 "******************************** ",
             )
-            mb = meta.loc[block_idx[bnum][0] : block_idx[bnum][1]]
-            tb = timing.loc[block_idx[bnum][0] : block_idx[bnum][1]]
+            mb2 = meta.loc[block_idx[bnum][0] : block_idx[bnum][1]]
+            tb2 = timing.loc[block_idx[bnum][0] : block_idx[bnum][1]]
 
-            total_trials = len(mb)
-            tb = tb.dropna(subset=["dot_onset_time"])
-            mb = mb.dropna(subset=["dot_onset"])
+            tb2 = tb2.dropna(subset=["dot_onset_time"])
+            mb2 = mb2.dropna(subset=["dot_onset"])
             index = []
-            for idx in tb.index:
+            for idx in tb2.index:
                 try:
-                    if len(tb.loc[idx, "dot_onset_time"]) == 10:
+                    if len(tb2.loc[idx, "dot_onset_time"]) == 10:
                         index.append(idx)
-                        tb.loc[idx, "first_dot_time"] = tb.loc[idx, "dot_onset_time"][0]
-                        mb.loc[idx, "first_dot"] = mb.loc[idx, "dot_onset"][0]
+                        tb2.loc[idx, "first_dot_time"] = tb2.loc[idx, "dot_onset_time"][0]
+                        mb2.loc[idx, "first_dot"] = mb2.loc[idx, "dot_onset"][0]
                 except TypeError:
                     pass
-            tb = tb.loc[index]
-            mb = mb.loc[index]
+            tb2 = tb2.loc[index]
+            mb2 = mb2.loc[index]
 
             r = raw.copy()  # created a copy to do not change raw
             r.crop(
-                tmin=tb.trial_start_time.min() / 1200.0 - 1,
-                tmax=1 + (tb.feedback_time.max() / 1200.0),
+                tmin=tb2.trial_start_time.min() / 1200.0 - 1,
+                tmax=1 + (tb2.feedback_time.max() / 1200.0),
             )  # crop for each block
             r = interpolate_bad_channels(subject, session, r)
-            # mb, tb = meg.preprocessing.get_meta(
-            #    r, mapping, trial_pins, 150, 151, other_pins
-            # )  # get new metadata for each block
+            mb, tb = meg.preprocessing.get_meta(
+                r, mapping, trial_pins, 150, 151, other_pins
+            )  # get new metadata for each block
 
             mb = eliminate_spurious_columns(
                 mb, columns_meta
             )  # sometime we need to drop some columns
             tb = eliminate_spurious_columns(tb, columns_timing)
-
+            tb = tb.dropna()
+            mb = mb.dropna()
             r, ants, artdef = meg.preprocessing.preprocess_block(
                 r, blinks=True
             )  # preprocess of each block looking for artifacts
