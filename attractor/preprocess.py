@@ -55,6 +55,7 @@ def get_blocks(meta, timing):
     for mblock, m in meta.groupby("block_start"):
         # If trial numbers are consecutive all good
         if any(np.diff(m.trial_num) < 0):
+            1/0
             # Somehow this block was restarted. Cout out first part of block
             idx = np.where(np.diff(m.trial_num) < 0)[0]
             m = m.iloc[idx[0] + 1 :].trial_num
@@ -118,15 +119,8 @@ def preprocess(subject, session):
     ]
 
     path = "/mnt/homes/home024/gortega/megdata/"
-    path_cluster = "/home/gortega/preprocessed_megdata/"
+    path_cluster = "/home/gortega/preprocessed_megdata/sensor_space"
     path_megdata = "/home/gortega/megdata/"
-    mapname = path_cluster + "key_map_s" + str(subject) + ".pickle"
-
-    try:
-        f = open(mapname, "rb")
-        cache = pickle.load(f)
-    except:
-        cache = {}
 
     for file_idx, filename in enumerate(
         glob.glob(os.path.join(path_megdata, "*S%i-%i_Att*" % (subject, session)))
@@ -174,6 +168,7 @@ def preprocess(subject, session):
                 bnum,
                 "******************************** ",
             )
+            
             mb2 = meta.loc[block_idx[bnum][0] : block_idx[bnum][1]]
             tb2 = timing.loc[block_idx[bnum][0] : block_idx[bnum][1]]
 
@@ -193,8 +188,8 @@ def preprocess(subject, session):
 
             r = raw.copy()  # created a copy to do not change raw
             r.crop(
-                tmin=tb2.trial_start_time.min() / 1200.0 - 1,
-                tmax=1 + (tb2.feedback_time.max() / 1200.0),
+                tmin=block_times[bnum][0]/1200, #[tb2.trial_start_time.min() / 1200.0 - 1,
+                tmax=block_times[bnum][1]/1200#1 + (tb2.feedback_time.max() / 1200.0),
             )  # crop for each block
             r = interpolate_bad_channels(subject, session, r)
             mb, tb = meg.preprocessing.get_meta(

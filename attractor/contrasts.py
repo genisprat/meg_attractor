@@ -27,9 +27,10 @@ def submit_contrasts(collect=False):
     import time
 
     tasks = []
-    subjects = [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19]
+    subjects = [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14]
     for subject in subjects:
-        tasks.append((contrasts, subject))
+        for epoch in ['response']:
+            tasks.append((contrasts, subject, epoch))
     res = []
     for cnt, task in enumerate(tasks):
         try:
@@ -49,7 +50,7 @@ def submit_contrasts(collect=False):
 
 @memory.cache()
 def get_contrasts(
-    contrasts, subject, epochs=["stimulus", "response"], baseline_per_condition=False
+    contrasts, subject, epoch="stimulus", baseline_per_condition=False
 ):
 
     # Load meta!
@@ -72,23 +73,22 @@ def get_contrasts(
 
     cps = []
     with Cache() as cache:
-        for epoch in epochs:
-            try:
-                contrast = compute_contrast(
-                    contrasts,
-                    files[epoch],
-                    files["baseline"],
-                    meta,
-                    (-0.35, -0.1),
-                    baseline_per_condition=baseline_per_condition,
-                    n_jobs=1,
-                    cache=cache,
-                )
-                contrast.loc[:, "epoch"] = epoch
-                cps.append(contrast)
-            except ValueError as e:
-                print(e)
-                pass
+        try:
+            contrast = compute_contrast(
+                contrasts,
+                files[epoch],
+                files["baseline"],
+                meta,
+                (-0.35, -0.1),
+                baseline_per_condition=baseline_per_condition,
+                n_jobs=1,
+                cache=cache,
+            )
+            contrast.loc[:, "epoch"] = epoch
+            cps.append(contrast)
+        except ValueError as e:
+            print(e)
+            pass
 
     contrast = pd.concat(cps)
     del cps

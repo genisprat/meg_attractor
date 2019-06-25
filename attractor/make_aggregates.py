@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from attractor import utils
-from pymeg import aggregate_sr as asr
+from pymeg import aggregate_sr as asr, parallel
 
 
 def submit_aggregates(collect=False):
@@ -12,14 +12,14 @@ def submit_aggregates(collect=False):
     subjects = [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19]
     for subject in subjects:
         for session in [5,6,7,8]:
-            tasks.append((subject, session))
+            for epoch in ['stimulus', 'response']:
+                tasks.append([(subject, session, epoch)])
     res = []
     for cnt, task in enumerate(tasks):
         try:
-            r = _eval(
-                get_contrasts,
+            r = parallel.pmap(
+                get_aggregate,
                 task,
-                collect=collect,
                 walltime="05:30:00",
                 tasks=4,
                 memory=40,
